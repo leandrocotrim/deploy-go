@@ -23,3 +23,14 @@ func main() {
 > curl localhost:8080
 # <h1>Go is works!</h1>
 ```
+
+--------
+
+```bash
+gcloud init
+gcloud auth login
+gcloud auth configure-docker us-central1-docker.pkg.dev
+
+docker build -t us-central1-docker.pkg.dev/teste-421902/docker-mages/deploy-go:latest .
+docker push us-central1-docker.pkg.dev/teste-421902/docker-mages/deploy-go:latest
+```
